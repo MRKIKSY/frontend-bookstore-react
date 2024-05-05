@@ -10,7 +10,7 @@ const EditBook = () => {
     const {id} = useParams()
 
     useEffect(() => {
-        axios.get('http://localhost:3001/book/book/'+id)
+        axios.get('https://backend-bookstore-nodejs-mongodb.onrender.com/book/book/'+id)
         .then(res => { 
             setName(res.data.name)
             setAuthor(res.data.author)
